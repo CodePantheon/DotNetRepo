@@ -1,9 +1,9 @@
-﻿using System;
-using CalculatorLib;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+﻿
 namespace CalculatorLibTests
 {
+    using CalculatorLib;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     [TestClass]
     public class CalculatorTests
     {
