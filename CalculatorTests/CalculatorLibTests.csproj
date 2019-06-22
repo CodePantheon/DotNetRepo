@@ -53,9 +53,9 @@
     <Compile Include="CalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
+  <!--<ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
+  </ItemGroup>-->
   <ItemGroup>
     <ProjectReference Include="..\Calculator\CalculatorLib.csproj">
       <Project>{062b9fde-f53d-416b-8575-e70978cb8f12}</Project>
