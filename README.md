@@ -1,5 +1,4 @@
 # UnitTestingRepo
-This Repository is meant to demonstrate Unit testing techniques in C#
 
 Calculator and its test project is basic introduction to the unit testing concepts.
 
