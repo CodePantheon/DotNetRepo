@@ -7,10 +7,13 @@ namespace LoggerLib
     /// <summary>
     /// Logger class.
     /// </summary>
-    public class Logger : ILogger
+    internal class Logger : ILogger
     {
         private IWriter writer;
         private readonly string logTime = DateTime.Now.ToString();
+        private readonly string info = "Info";
+        private readonly string warning = "Warn";
+        private readonly string error = "Error";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Logger"/> class.
@@ -23,17 +26,17 @@ namespace LoggerLib
 
         public void LogInfo(string infoText, [CallerMemberName] string memberName = "", [CallerFilePath] string callerFilePath = "")
         {
-            this.writer.Write(string.Format("{0} {1} {2} {3}", logTime, infoText, callerFilePath, memberName));
+            this.writer.Write(string.Format("{0} {1}:{2} {3} {4}", logTime, info, infoText, callerFilePath, memberName));
         }
 
         public void LogWarning(string warningText, [CallerMemberName] string memberName = "", [CallerFilePath] string callerFilePath = "")
         {
-            this.writer.Write(string.Format("{0} {1} {2} {3}", logTime, warningText, callerFilePath, memberName));
+            this.writer.Write(string.Format("{0} {1}:{2} {3} {4}", logTime, warning, warningText, callerFilePath, memberName));
         }
 
         public void LogError(string errorText, [CallerMemberName] string memberName = "", [CallerFilePath] string callerFilePath = "")
         {
-            this.writer.Write(string.Format("{0} {1} {2} {3}", logTime, errorText, callerFilePath, memberName));
+            this.writer.Write(string.Format("{0} {1}:{2} {3} {4}", logTime, error ,errorText, callerFilePath, memberName));
         }
     }
 }
