@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Moq</id>
-    <version>4.5.20</version>
+    <version>4.5.0</version>
     <title>Moq: an enjoyable mocking library</title>
     <authors>Daniel Cazzulino, kzu</authors>
     <owners>Daniel Cazzulino, Clarius Labs, kzu</owners>
@@ -13,7 +13,6 @@
     <releaseNotes>Version 4.5
 * Updated to .NET 4.5
 * Dropped support for .NET &lt; 4.5 and Silverlight
-* Remove ILMerge. Depend on Castle NuGet package instead.
 
 Version 4.3
 * Added support for Roslyn
@@ -175,10 +174,5 @@ Version 1.0
 
 * Initial release, initial documentation process in place, etc.</releaseNotes>
     <tags>moq tdd mocking mocks unittesting agile unittest</tags>
-    <dependencies>
-      <group targetFramework=".NETFramework4.5">
-        <dependency id="Castle.Core" version="3.3.3" />
-      </group>
-    </dependencies>
   </metadata>
 </package>
