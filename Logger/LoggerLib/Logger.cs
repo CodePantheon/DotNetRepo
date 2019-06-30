@@ -21,6 +21,11 @@ namespace LoggerLib
         /// <param name="writer"></param>
         public Logger(IWriter writer)
         {
+            if (writer == null)
+            {
+                throw new ArgumentNullException("writer cannot be null!");
+            }
+
             this.writer = writer;
         }
 
