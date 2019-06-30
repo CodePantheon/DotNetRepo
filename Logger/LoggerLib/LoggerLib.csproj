@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeProvider.cs" />
     <Compile Include="FileWriter.cs" />
+    <Compile Include="IDateTimeProvider.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="IWriter.cs" />
     <Compile Include="Logger.cs" />
