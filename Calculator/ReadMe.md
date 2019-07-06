@@ -1,3 +1,5 @@
+# Unit Testing Calculator
+
 Calculator and its test project is basic introduction to the unit testing concepts.
 
 Usage:
