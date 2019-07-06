@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="05feb82b-d6ad-4ce3-8d64-fca704549a08" name="Logger" linkedPackageId="82aa38ac-0ad9-45f6-9cfd-89a10b89d8cd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c05a6883-f63c-437f-88f9-89933b81e1f8">
+      <profileInstance Id="0e48edf5-c4ee-49d0-b4be-3a4d7865e9f9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="63f6a63e-4a23-4040-b072-0cc791e75af6">
+      <profileInstance Id="38841654-e3e5-404f-9ffd-068220d26237" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="916a9e9a-6c46-4668-8e6c-cc26b3c92257" name="LoggerProxy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e3834227-6e12-46ca-b628-dd313e90349c" />
+        <suppliersInternal>
+          <interfaceRealization Id="d2e76c77-1a1a-4086-ba12-236b2a61ae2d">
+            <interfaceMoniker Id="c0249124-6430-4465-ba82-950bf0d9e119" LastKnownName="ILogger" />
+            <elementDefinition Id="f309d161-631e-4fe2-b180-2bc24d45b870" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="c063c0d7-8200-4d67-9241-3b4f6843eedf" isDerived="false" sourceEndRoleName="LoggerProxy" targetEndRoleName="Logger" isLeaf="false" isAbstract="false">
+            <classMoniker Id="934a73c3-099d-4cb2-aeed-2fc42a16cbca" LastKnownName="Logger" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf38d007-7b6f-4182-b1a7-2224dd2d68fb" name="LoggerProxy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26a74bfb-dd84-450b-ac71-c126c3bf4314" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ffc1859-0a6f-4f65-a67a-96e7efb5117a" name="Logger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="64146a18-4cea-45bc-b800-635ed5bc516d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="497add03-2580-4cbb-9fb0-eeb1e2d4216c" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="625f29a8-aa04-41e8-826a-df02d535b6c1" name="LogInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a4d77c7c-abbf-41aa-995c-1221002b6d4f" />
+          </operation>
+          <operation Id="c3055ac2-ccc8-4176-8a23-1c12bba6204a" name="LogWarning" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a1de9046-4dd1-447d-972c-26234c3196c3" />
+          </operation>
+          <operation Id="c05a9f0e-414c-4167-b593-17907136ce59" name="LogError" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a24c0367-1543-4446-b1ad-054d1f17aab8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="934a73c3-099d-4cb2-aeed-2fc42a16cbca" name="Logger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ca220cd7-355c-41b7-8fb6-71e2d78a5fee" />
+        <suppliersInternal>
+          <interfaceRealization Id="670c8b67-56fc-4590-9bac-fecf59b12879">
+            <interfaceMoniker Id="f4cfd010-b772-4f29-b27b-18e82399154f" LastKnownName="ILogger^" />
+            <elementDefinition Id="455a66c1-43aa-49a1-b4ef-85053722d909" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="1c496c96-636a-45e4-b76d-035bef2f62d9" isDerived="false" sourceEndRoleName="Logger" targetEndRoleName="LogWriterFactory" isLeaf="false" isAbstract="false">
+            <classMoniker Id="edc335bb-b897-4082-804d-a5d61be003d6" LastKnownName="LogWriterFactory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba0a7dd2-46c7-442e-9324-c4a9c18053d4" name="Logger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1df54bcb-1185-4f52-a22a-526c29883a77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20c9ac76-c631-4751-86f7-08310e763433" name="LogWriterFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e4d62ab1-b6c6-44a3-8ee8-2e2a71942f01" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3d97f9f0-b439-4dbf-952b-977c3665eaf1" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="1131433e-1020-4237-91a7-eacd5b821b4b" name="LogInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c97ff2d5-3b87-4e9b-b54c-6b51820dbd3c" />
+          </operation>
+          <operation Id="3318a2c2-5571-4161-b367-c537ba13e28f" name="LogWarning" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3b6ff373-2c54-4951-965b-8636043056ef" />
+          </operation>
+          <operation Id="c59f5b7b-4746-4785-bedd-8c19bdab0e04" name="LogError" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11fde5e9-4ac4-4c77-b6d4-c5fcc0eb2b6f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c0249124-6430-4465-ba82-950bf0d9e119" name="ILogger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2950afa6-621c-44c6-a6a1-82ce04a43fe3" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f4cfd010-b772-4f29-b27b-18e82399154f" name="ILogger^" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8228b89-0517-449e-9d46-6bddfe804e1a" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="24c16a17-6a79-4160-84f3-da197e501f48" name="LoggerProvider" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b5aedcb9-094d-4df2-bd29-99ab969b0813" />
+        <targetEnds>
+          <association Id="8ded78e4-a22d-48e4-98df-23b0bc99506a" isDerived="false" sourceEndRoleName="LoggerProvider" targetEndRoleName="ILogger" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="c0249124-6430-4465-ba82-950bf0d9e119" LastKnownName="ILogger" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05ef059d-e1a2-418c-b319-4a1c71e8cda3" name="LoggerProvider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c53ebd5-8e1a-412c-a63b-655bf62d50d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05167844-ec58-44e4-9360-39d52d3ef4ee" name="ILogger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="2854ab20-626b-4e2b-b933-c241c75a1cdf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="df2e2404-70f6-4f36-9c9d-bcc72239634e" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="7f61b813-9e29-41f1-ba1e-2e80fc763b21" name="GetLogger" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c336468-92af-4aeb-8815-52b8a167698f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39200ba0-92aa-48ed-ac21-c69146c71cd1" name="LoggerProvider^" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="84641547-95c8-4371-beb3-f7b175fdf7b1" />
+        <targetEnds>
+          <association Id="831912f4-85f6-4b68-a905-8da24615fd18" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="f4cfd010-b772-4f29-b27b-18e82399154f" LastKnownName="ILogger^" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51bdf260-c446-4b91-8840-782a602fad4d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="514b222e-26e9-4e67-a978-fa6a3b533bea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e48eff6c-6ea8-445a-bb19-df03ebccaaf8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="42c00310-f704-4a4f-87db-dad18ff185d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="83e9016c-5c5e-416e-b58e-beafe62243be" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="ab76e704-cfec-41d2-afca-d06d0a33f9fa" name="GetLogger" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2610c89b-8f51-4584-8bd0-ccec94adf21e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="37b31b55-ec34-48e1-b86c-48f0ec6644fb" name="LogIO">
+        <elementDefinition Id="024742d2-ae1a-4358-af58-78bc054c7b3d" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="a08c4f23-805d-47a4-bf05-a414ec405da5" name="ILogWriter" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4c1e3cc3-001f-42d0-978e-f96548f077be" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="edc335bb-b897-4082-804d-a5d61be003d6" name="LogWriterFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2457befb-0e71-4ed5-949d-a462b5a8bbd6" />
+              <targetEnds>
+                <association Id="aa49c8b8-7fff-44e8-b2ae-b6919afc2025" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="a08c4f23-805d-47a4-bf05-a414ec405da5" LastKnownName="ILogWriter" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="910e8ca3-5001-43bb-bae4-bd4ad3eecd43" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="27dd0fc1-1d75-492d-9919-062e5a40601e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="40e0d151-c040-49bb-8bee-1b51ec6deca6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="7f9ce56a-740d-4353-bf78-8176ffc3a737" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="1be165c2-d923-48d7-8675-18ccf05aa0aa" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="feceae8a-1a56-4c1e-8557-600206df12e8" name="Create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b0094309-dda2-4c1f-8d8f-f15b3100398d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="82aa38ac-0ad9-45f6-9cfd-89a10b89d8cd" name="LoggingModeling">
+    <elementDefinition Id="c71f2843-1d5f-4a41-86a7-de5e2ed0a728" />
+  </package>
+</logicalClassDesignerModel>

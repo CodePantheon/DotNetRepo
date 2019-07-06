@@ -1,0 +1,22 @@
+﻿[
+  {
+    "LoggerType": "DatabaseLogger",
+    "LogWriterAssemblyName": "CodePantheon.LogIO",
+    "LogWriterClassName": "CodePantheon.LogIO.DatabaseLogWriter"
+  },
+  {
+    "LoggerType": "EventLogger",
+    "LogWriterAssemblyName": "CodePantheon.LogIO",
+    "LogWriterClassName": "CodePantheon.LogIO.EventLogWriter"
+  },
+  {
+    "LoggerType": "TextLogger",
+    "LogWriterAssemblyName": "CodePantheon.LogIO",
+    "LogWriterClassName": "CodePantheon.LogIO.TextLogWriter"
+  },
+  {
+    "LoggerType": "XmlLogger",
+    "LogWriterAssemblyName": "CodePantheon.LogIO",
+    "LogWriterClassName": "CodePantheon.LogIO.XmlLogWriter"
+  }
+]

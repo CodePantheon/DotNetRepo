@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Diagnostic" Text="ProjectPath = ..\LoggingIOLib\LoggingIOLib.csproj" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2019-06-28T11:36:13" Importance="Medium" Text="LoggingIO's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'LoggingIO::LogWriterFactory' -  (Class), 'LoggingIO::TextLogWriter' -  (Class), 'LoggingIO::XmlLogWriter' -  (Class), 'LoggingIO::EventLogWriter' -  (Class), 'LoggingIO::DatabaseLogWriter' -  (Class), 'LoggingIO::JsonConfigParser' -  (Class) " />
+  <Message Timestamp="2019-06-28T11:37:06" Importance="Medium" Text="Project Added: C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\LoggingIOLib.csproj" />
+  <Message Timestamp="2019-06-28T11:37:06" Importance="Medium" Text="'LoggingIO::LogWriterFactory' -  (Class) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\LogWriterFactory.cs" />
+  <Message Timestamp="2019-06-28T11:37:06" Importance="Medium" Text="'LoggingIO::TextLogWriter' -  (Class) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\TextLogWriter.cs" />
+  <Message Timestamp="2019-06-28T11:37:06" Importance="Medium" Text="'LoggingIO::XmlLogWriter' -  (Class) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\XmlLogWriter.cs" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Medium" Text="'LoggingIO::EventLogWriter' -  (Class) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\EventLogWriter.cs" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Medium" Text="'LoggingIO::DatabaseLogWriter' -  (Class) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\DatabaseLogWriter.cs" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Medium" Text="'LoggingIO::JsonConfigParser' -  (Class) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\JsonConfigParser.cs" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="ProjectPath = ..\LoggingIOLib\LoggingIOLib.csproj" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Medium" Text="LoggingIO's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'LoggingIO::ILogWriter' -  (Interface), 'LoggingIO::IConfigParser' -  (Interface) " />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Medium" Text="'LoggingIO::ILogWriter' -  (Interface) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\ILogWriter.cs" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Medium" Text="'LoggingIO::IConfigParser' -  (Interface) : success (file created) - C:\Users\320053561\Source\Repos\Logging\LoggingIOLib\GeneratedCode\IConfigParser.cs" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="ProjectPath = ..\LoggingIOLib\LoggingIOLib.csproj" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Medium" Text="LoggingIO's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'LoggingIO::LogWriterFactory' -  (Class), 'LoggingIO::TextLogWriter' -  (Class), 'LoggingIO::XmlLogWriter' -  (Class), 'LoggingIO::EventLogWriter' -  (Class), 'LoggingIO::DatabaseLogWriter' -  (Class), 'LoggingIO::JsonConfigParser' -  (Class) " />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="'LoggingIO::LogWriterFactory' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="'LoggingIO::TextLogWriter' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="'LoggingIO::XmlLogWriter' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2019-06-28T11:37:07" Importance="Diagnostic" Text="'LoggingIO::EventLogWriter' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::DatabaseLogWriter' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::JsonConfigParser' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="The selection included 7 elements which were not bound to a template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::' -  (Association): no bound template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::' -  (Association): no bound template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="Diagnostic" Text="'LoggingIO::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2019-06-28T11:37:08" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

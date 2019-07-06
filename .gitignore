@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CliLogging/CSharpLoggingSample/obj/Debug
+/CliLogging/CSharpLoggingSample/bin/Debug
+/CliLogging/Logger/Debug
+/CliLogging/LogIO/bin/Debug
+/CliLogging/LogIO/obj/Debug
+*.user
+*.db
