@@ -9,3 +9,5 @@
 /CliLogging/LogIO/obj/Debug
 *.user
 *.db
+*.suo
+*.opendb
