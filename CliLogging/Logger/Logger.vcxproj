@@ -155,7 +155,7 @@
     <ClCompile Include="Native\LoggerProvider.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LogIO\LogIO.csproj">
+    <ProjectReference Include="..\LogIO\CodePantheon.LogIO.csproj">
       <Project>{35bad46f-b9fd-45c1-8555-a2909ed7b98c}</Project>
     </ProjectReference>
   </ItemGroup>
