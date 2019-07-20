@@ -1,6 +1,6 @@
 ﻿namespace CodePantheon.LogIO
 {
-    public enum LogType
+    public enum LogLevel
     {
         INFO,
         WARNING,
@@ -12,6 +12,6 @@
     /// </summary>
     public interface ILogWriter
     {
-        void WriteLog(LogType logType, string date, string tag, string message);
+        void WriteLog(LogData logData);
     }
 }

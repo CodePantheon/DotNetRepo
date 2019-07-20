@@ -11,22 +11,22 @@ namespace CodePantheon
 				myLogWriter = logWriter;
 			}
 
-			void Logger::LogInfo(String^ tag, String^ message)
+			void Logger::LogInfo(String^ message, String^ memberName, String^ callerFilePath)
 			{
 				String^ currentDate = DateTime::Now.ToString("g");
-				myLogWriter->WriteLog(LogType::INFO, currentDate, tag, message);
+				myLogWriter->WriteLog(gcnew LogData(currentDate, LogLevel::INFO, message, memberName, callerFilePath));
 			}
 
-			void Logger::LogWarning(String^ tag, String^ message)
+			void Logger::LogWarning(String^ message, String^ memberName, String^ callerFilePath)
 			{
 				String^ currentDate = DateTime::Now.ToString("g");
-				myLogWriter->WriteLog(LogType::WARNING, currentDate, tag, message);
+				myLogWriter->WriteLog(gcnew LogData(currentDate, LogLevel::WARNING, message, memberName, callerFilePath));
 			}
 
-			void Logger::LogError(String^ tag, String^ message)
+			void Logger::LogError(String^ message, String^ memberName, String^ callerFilePath)
 			{
 				String^ currentDate = DateTime::Now.ToString("g");
-				myLogWriter->WriteLog(LogType::ERROR, currentDate, tag, message);
+				myLogWriter->WriteLog(gcnew LogData(currentDate, LogLevel::ERROR, message, memberName, callerFilePath));
 			}
 		}
 	}

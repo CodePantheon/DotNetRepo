@@ -8,7 +8,7 @@
         {
             // var logger = LoggerProvider.GetLogger("Unsupported Logger");
             var logger = LoggerProvider.GetLogger("EventLogger");
-            logger.LogInfo("CSharpLogging", "In Main() method");
+            logger.LogInfo("In Main() method");
         }
     }
 }

@@ -11,16 +11,13 @@ namespace CodePantheon
 		{
 			ILogger^ LoggerProvider::GetLogger(String^ loggerType)
 			{
-				if (myLoggerInstance != nullptr)
-				{
-					return myLoggerInstance;
-				}
-				else
+				if (myLoggerInstance == nullptr)
 				{
 					auto logWriter = LogWriterFactory::Create(loggerType);
 					myLoggerInstance = gcnew Logger(logWriter);
-					return myLoggerInstance;
 				}
+
+				return myLoggerInstance;
 			}
 		}
 	}

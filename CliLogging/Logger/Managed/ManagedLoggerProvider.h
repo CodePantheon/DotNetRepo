@@ -12,7 +12,7 @@ namespace CodePantheon
 			public:
 				static ILogger^ GetLogger(String^ loggerType);
 			private:
-				LoggerProvider(){}
+				LoggerProvider() {}
 
 			private:
 				static ILogger^ myLoggerInstance;

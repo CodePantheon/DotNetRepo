@@ -13,9 +13,9 @@ namespace CodePantheon
 			{
 			public:
 				Logger(ILogWriter^ logWriter);
-				void LogInfo(String^ TAG, String^ MESSAGE) override;
-				void LogWarning(String^ TAG, String^ MESSAGE) override;
-				void LogError(String^ TAG, String^ MESSAGE) override;
+				void LogInfo(String^ MESSAGE, [CallerMemberName][Optional] String^ memberName, [CallerFilePath][Optional] String^ callerFilePath) override;
+				void LogWarning(String^ MESSAGE, [CallerMemberName][Optional] String^ memberName, [CallerFilePath][Optional] String^ callerFilePath) override;
+				void LogError(String^ MESSAGE, [CallerMemberName][Optional] String^ memberName, [CallerFilePath][Optional] String^ callerFilePath) override;
 
 			private:
 				ILogWriter^ myLogWriter;

@@ -11,15 +11,12 @@ namespace CodePantheon
 
 			ILogger* LoggerProvider::GetLogger(const string loggerType)
 			{
-				if (myLoggerInstance != nullptr)
-				{
-					return myLoggerInstance;
-				}
-				else
+				if (myLoggerInstance == nullptr)
 				{
 					myLoggerInstance = new LoggerProxy(loggerType);
-					return myLoggerInstance;
 				}
+
+				return myLoggerInstance;
 			}
 		}
 	}

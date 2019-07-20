@@ -12,9 +12,9 @@ namespace CodePantheon
 			class ILogger abstract
 			{
 			public:
-				virtual void LogInfo(string TAG, string MESSAGE) = 0;
-				virtual void LogWarning(string TAG, string MESSAGE) = 0;
-				virtual void LogError(string TAG, string MESSAGE) = 0;
+				virtual void LogInfo(string MESSAGE) = 0;
+				virtual void LogWarning(string MESSAGE) = 0;
+				virtual void LogError(string MESSAGE) = 0;
 			};
 		}
 	}

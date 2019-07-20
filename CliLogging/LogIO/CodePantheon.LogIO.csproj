@@ -47,6 +47,7 @@
     <Compile Include="DatabaseLogWriter.cs" />
     <Compile Include="EventLogWriter.cs" />
     <Compile Include="ILogWriter.cs" />
+    <Compile Include="LogData.cs" />
     <Compile Include="LoggerType.cs" />
     <Compile Include="LogWriterInfo.cs" />
     <Compile Include="LogWriterFactory.cs" />
