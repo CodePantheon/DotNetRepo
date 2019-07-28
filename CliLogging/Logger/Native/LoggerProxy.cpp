@@ -20,12 +20,12 @@ namespace CodePantheon
 
 			void LoggerProxy::LogWarning(const string MESSAGE)
 			{
-				myManagedLogger->LogWarning(ConvertToManagedString(MESSAGE));
+				myManagedLogger->LogWarning(ConvertToManagedString(MESSAGE), "", "");
 			}
 
 			void LoggerProxy::LogError(const string MESSAGE)
 			{
-				myManagedLogger->LogError(ConvertToManagedString(MESSAGE));
+				myManagedLogger->LogError(ConvertToManagedString(MESSAGE), "", "");
 			}
 
 			String^ LoggerProxy::ConvertToManagedString(string input)
