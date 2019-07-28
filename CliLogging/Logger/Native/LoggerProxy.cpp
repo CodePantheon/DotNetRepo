@@ -15,7 +15,7 @@ namespace CodePantheon
 
 			void LoggerProxy::LogInfo(const string MESSAGE)
 			{
-				myManagedLogger->LogInfo(ConvertToManagedString(MESSAGE));
+				myManagedLogger->LogInfo(ConvertToManagedString(MESSAGE), "", "");
 			}
 
 			void LoggerProxy::LogWarning(const string MESSAGE)
