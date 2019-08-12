@@ -8,8 +8,8 @@ using namespace CodePantheon::Native::Logging;
 int main()
 {
 	// auto logger = LoggerProvider::GetLogger("Unsupported Logger");
-	auto logger = LoggerProvider::GetLogger("TextLogger");
-	logger->LogInfo("CppLogging", "In Main function");
+
+	TEXT_LOG_INFO("CppLogging - In Main function");
     return 0;
 }
 

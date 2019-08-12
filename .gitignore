@@ -11,3 +11,6 @@
 *.db
 *.suo
 *.opendb
+/CliLogging/CppLoggingSample/Debug
+/CliLogging/Debug
+*.opensdf

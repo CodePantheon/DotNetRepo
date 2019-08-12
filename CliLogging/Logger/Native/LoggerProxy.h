@@ -18,9 +18,9 @@ namespace CodePantheon
 			{
 			public:
 				LoggerProxy(string loggerType);
-				void LogInfo(string MESSAGE) override;
-				void LogWarning(string MESSAGE) override;
-				void LogError(string MESSAGE) override;
+				void LogInfo(string MESSAGE, string functionName, string callerFilePath) override;
+				void LogWarning(string MESSAGE, string functionName, string callerFilePath) override;
+				void LogError(string MESSAGE, string functionName, string callerFilePath) override;
 			private:
 				static String^ ConvertToManagedString(string input);
 

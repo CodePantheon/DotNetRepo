@@ -13,19 +13,19 @@ namespace CodePantheon
 				myManagedLogger = LoggerProvider::GetLogger(ConvertToManagedString(loggerType));
 			}
 
-			void LoggerProxy::LogInfo(const string MESSAGE)
+			void LoggerProxy::LogInfo(const string MESSAGE, const string functionName, const string callerFilePath)
 			{
-				myManagedLogger->LogInfo(ConvertToManagedString(MESSAGE), "", "");
+				myManagedLogger->LogInfo(ConvertToManagedString(MESSAGE), ConvertToManagedString(functionName), ConvertToManagedString(callerFilePath));
 			}
 
-			void LoggerProxy::LogWarning(const string MESSAGE)
+			void LoggerProxy::LogWarning(const string MESSAGE, const string functionName, const string callerFilePath)
 			{
-				myManagedLogger->LogWarning(ConvertToManagedString(MESSAGE), "", "");
+				myManagedLogger->LogWarning(ConvertToManagedString(MESSAGE), ConvertToManagedString(functionName), ConvertToManagedString(callerFilePath));
 			}
 
-			void LoggerProxy::LogError(const string MESSAGE)
+			void LoggerProxy::LogError(const string MESSAGE, const string functionName, const string callerFilePath)
 			{
-				myManagedLogger->LogError(ConvertToManagedString(MESSAGE), "", "");
+				myManagedLogger->LogError(ConvertToManagedString(MESSAGE), ConvertToManagedString(functionName), ConvertToManagedString(callerFilePath));
 			}
 
 			String^ LoggerProxy::ConvertToManagedString(string input)
