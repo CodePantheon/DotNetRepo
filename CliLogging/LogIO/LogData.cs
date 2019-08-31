@@ -29,5 +29,10 @@ namespace CodePantheon.LogIO
         public string LogSourceFunction { get; }
 
         public string LogSourceFile { get; }
+
+        public override string ToString()
+        {
+            return ($"{LogDateTime} {LogLevel} {LogMessage} from {LogSourceFile}-{LogSourceFunction}");
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace CodePantheon.LogIO
 {
@@ -9,7 +10,9 @@ namespace CodePantheon.LogIO
     {
         public void WriteLog(LogData logData)
         {
-            throw new NotImplementedException();
+            MessageBox.Show(
+                "Implement write log method yourself, see log below:" + Environment.NewLine + logData.ToString(), 
+                "TextLogWriter");
         }
     }
 }
