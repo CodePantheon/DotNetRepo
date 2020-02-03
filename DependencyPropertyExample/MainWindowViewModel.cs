@@ -35,17 +35,17 @@ namespace Org.CodePantheon.CustomButton
             timer.Enabled = true;
             timer.Start();
             timer.Interval = 1000;
-            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Tick += new EventHandler(TimerTickEventHandler);
         }
         public void StopTimer()
         {
             timer.Enabled = false;
             timer.Stop();
-            timer.Tick -= new EventHandler(timer1_Tick);
+            timer.Tick -= new EventHandler(TimerTickEventHandler);
             this.ProgressState = 0.0d;
         }
 
-        void timer1_Tick(object sender, EventArgs e)
+        private void TimerTickEventHandler(object sender, EventArgs e)
         {
             if (this.ProgressState < 100)
             {
