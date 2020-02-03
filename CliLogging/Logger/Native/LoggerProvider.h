@@ -11,7 +11,7 @@ using namespace std;
 #define LOGGER_PROVIDER_API _declspec(dllimport)
 #endif
 
-#define TEXT_LOG_INFO (message) \
+#define TEXT_LOG_INFO(message) \
 { auto logger = LoggerProvider::GetLogger("TextLogger"); logger->LogInfo(message, __FUNCTION__, __FILE__); }
 
 namespace CodePantheon

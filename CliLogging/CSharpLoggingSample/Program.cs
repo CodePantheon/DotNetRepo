@@ -7,7 +7,7 @@
         static void Main(string[] args)
         {
             // var logger = LoggerProvider.GetLogger("Unsupported Logger");
-            var logger = LoggerProvider.GetLogger("EventLogger");
+            var logger = LoggerProvider.GetLogger("TextLogger");
             logger.LogInfo("CSharpLoggingSample - In Main() method");
         }
     }
