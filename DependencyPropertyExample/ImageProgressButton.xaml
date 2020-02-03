@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Org.CodePantheon.CustomButton.ImageProgressButton"
+             Name="ImageProgressBtn"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Org.CodePantheon.CustomButton"
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Button Height="300" Width="450" Command="{Binding ElementName=ImageProgressBtn, Path=ImageProgressButtonCommand}">
+            <Button.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Visibility="{Binding ElementName=ImageProgressBtn, Path=ImageOn, Converter={StaticResource BooleanToVisibilityConverter}}" 
+                           Grid.Row="0" Height="200" Width="450" Stretch="Fill" Source="{Binding ElementName=ImageProgressBtn, Path=Image}"/>
+
+                    <ProgressBar Visibility="{Binding ElementName=ImageProgressBtn, Path=ProgressOn, Converter={StaticResource BooleanToVisibilityConverter}}" 
+                                 Grid.Row="1" Value="{Binding ElementName=ImageProgressBtn, Path=ProgressValue}" Height="100" Width="450" Foreground="CornflowerBlue" />
+                </Grid>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</UserControl>

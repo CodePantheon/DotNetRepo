@@ -14,3 +14,7 @@
 /CliLogging/CppLoggingSample/Debug
 /CliLogging/Debug
 *.opensdf
+/DependencyPropertyExample/bin/Debug
+/DependencyPropertyExample/obj/Debug
+*.htm
+*.sdf
