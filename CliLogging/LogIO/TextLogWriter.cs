@@ -11,7 +11,7 @@ namespace CodePantheon.LogIO
         public void WriteLog(LogData logData)
         {
             MessageBox.Show(
-                "Implement write log method yourself, see log below:" + Environment.NewLine + logData.ToString(), 
+                "Implement WriteLog() method yourself, see log below:" + Environment.NewLine + logData.ToString(), 
                 "TextLogWriter");
         }
     }

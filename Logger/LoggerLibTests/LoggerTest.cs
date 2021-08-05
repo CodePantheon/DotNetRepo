@@ -10,12 +10,12 @@ namespace LoggerLibTests
     [TestClass]
     public class LoggerTest
     {
-        private Mock<IWriter> mockWriter;
-        private Mock<IDateTimeProvider> mockDateTimeProvider;
-        private Logger logger;
+        private static Mock<IWriter> mockWriter;
+        private static Mock<IDateTimeProvider> mockDateTimeProvider;
+        private static Logger logger;
 
         [TestInitialize]
-        public void TestInit()
+        public static void TestInit(TestContext testContext)
         {
             mockWriter = new Mock<IWriter>();
             mockDateTimeProvider = new Mock<IDateTimeProvider>();
@@ -54,7 +54,7 @@ namespace LoggerLibTests
             string memberName = new StackTrace().GetFrame(0).GetMethod().Name;
             string callerFilePath = new StackFrame(0, true).GetFileName();
             DateTime dateTimeNow = DateTime.Now;
-            this.mockDateTimeProvider.Setup(m => m.CurrentDateTime).Returns(dateTimeNow);
+            mockDateTimeProvider.Setup(m => m.CurrentDateTime).Returns(dateTimeNow);
             string expectedLogText = string.Format("{0} {1}:{2} {3} {4}", dateTimeNow.ToString(), "Info", textToLog, callerFilePath, memberName);
 
             // Act
@@ -72,7 +72,7 @@ namespace LoggerLibTests
             string memberName = new StackTrace().GetFrame(0).GetMethod().Name;
             string callerFilePath = new StackFrame(0, true).GetFileName();
             DateTime dateTimeNow = DateTime.Now;
-            this.mockDateTimeProvider.Setup(m => m.CurrentDateTime).Returns(dateTimeNow);
+            mockDateTimeProvider.Setup(m => m.CurrentDateTime).Returns(dateTimeNow);
             string expectedLogText = string.Format("{0} {1}:{2} {3} {4}", dateTimeNow.ToString(), "Warn", textToLog, callerFilePath, memberName);
 
             // Act
@@ -90,7 +90,7 @@ namespace LoggerLibTests
             string memberName = new StackTrace().GetFrame(0).GetMethod().Name;
             string callerFilePath = new StackFrame(0, true).GetFileName();
             DateTime dateTimeNow = DateTime.Now;
-            this.mockDateTimeProvider.Setup(m => m.CurrentDateTime).Returns(dateTimeNow);
+            mockDateTimeProvider.Setup(m => m.CurrentDateTime).Returns(dateTimeNow);
             string expectedLogText = string.Format("{0} {1}:{2} {3} {4}", dateTimeNow.ToString(), "Error", textToLog, callerFilePath, memberName);
 
             // Act
