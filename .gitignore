@@ -18,6 +18,8 @@
 **/obj/Debug
 **/obj/Release
 **/.vs
+*.htm
+*.sdf
 /Logger/LoggerLib/obj
 /CliLogging/LogIO/obj/Release
 /Logger/LoggerLibTests/obj/Debug
